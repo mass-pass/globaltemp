@@ -1,8 +1,9 @@
 import React from 'react';
-import {View, ImageBackground, Text, Pressable} from 'react-native';
+import { View, ImageBackground, Text, Pressable } from 'react-native';
 import styles from './styles';
 import Fontisto from 'react-native-vector-icons/Fontisto';
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
+import { Auth } from 'aws-amplify';
 
 const HomeScreen = (props) => {
   const navigation = useNavigation();
@@ -23,7 +24,7 @@ const HomeScreen = (props) => {
 
         <Pressable
           style={styles.button}
-          onPress={() => console.warn('Explore Btn clicked')}>
+          >
           <Text style={styles.buttonText}>Explore nearby stays</Text>
         </Pressable>
       </ImageBackground>

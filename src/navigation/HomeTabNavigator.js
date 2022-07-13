@@ -11,6 +11,8 @@ import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import PostScreen from "../screens/PostScreen";
 
+//import Post from '../components/'
+
 const Tab = createBottomTabNavigator();
 
 const HomeTabNavigator = (props) => {
@@ -47,7 +49,7 @@ const HomeTabNavigator = (props) => {
         }}
       />
       <Tab.Screen
-        name={'Messages'}
+        name={'Post'}
         component={HomeScreen}
         options={{
           tabBarIcon: ({color}) => (
